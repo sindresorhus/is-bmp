@@ -27,7 +27,7 @@ $ component install sindresorhus/is-bmp
 ```js
 var readChunk = require('read-chunk'); // npm install read-chunk
 var isBmp = require('is-bmp');
-var buffer = readChunk('unicorn.bmp', 0, 2);
+var buffer = readChunk.sync('unicorn.bmp', 0, 2);
 
 isBmp(buffer);
 //=> true
