@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Check if a Buffer/Uint8Array is a BMP image",
   "license": "MIT",
-  "repo": "sindresorhus/is-bmp",
+  "repository": "sindresorhus/is-bmp",
   "scripts": [
     "index.js"
   ],
