@@ -11,14 +11,6 @@ Used by [image-type](https://github.com/sindresorhus/image-type).
 $ npm install --save is-bmp
 ```
 
-```sh
-$ bower install --save is-bmp
-```
-
-```sh
-$ component install sindresorhus/is-bmp
-```
-
 
 ## Usage
 
