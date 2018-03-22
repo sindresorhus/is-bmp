@@ -1,13 +1,10 @@
-'use strict';
-var assert = require('assert');
-var readChunk = require('read-chunk');
-var isBmp = require('./');
+import test from 'ava';
+import readChunk from 'read-chunk';
+import m from '.';
 
-function check(filename) {
-	return isBmp(readChunk.sync(filename, 0, 4));
-}
+const check = filename => m(readChunk.sync(filename, 0, 4));
 
-it('should detect BMP from Buffer', function () {
-	assert(check('fixture.bmp'));
-	assert(!check('fixture.png'));
+test('detects BMP from Buffer', t => {
+	t.true(check('fixture.bmp'));
+	t.false(check('fixture.png'));
 });
