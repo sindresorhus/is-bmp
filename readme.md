@@ -1,4 +1,4 @@
-# is-bmp [![Build Status](https://travis-ci.org/sindresorhus/is-bmp.svg?branch=master)](https://travis-ci.org/sindresorhus/is-bmp)
+# is-bmp
 
 > Check if a Buffer/Uint8Array is a [BMP](https://en.m.wikipedia.org/wiki/BMP_file_format) image
 
