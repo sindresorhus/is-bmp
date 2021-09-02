@@ -2,22 +2,21 @@
 
 > Check if a Buffer/Uint8Array is a [BMP](https://en.m.wikipedia.org/wiki/BMP_file_format) image
 
-
 ## Install
 
 ```
 $ npm install is-bmp
 ```
 
-
 ## Usage
 
 ##### Node.js
 
 ```js
-const readChunk = require('read-chunk');
-const isBmp = require('is-bmp');
-const buffer = readChunk.sync('unicorn.bmp', 0, 2);
+import {readChunk} from 'read-chunk';
+import isBmp from 'is-bmp';
+
+const buffer = await readChunk('unicorn.bmp', {length: 2});
 
 isBmp(buffer);
 //=> true
@@ -38,21 +37,14 @@ xhr.onload = () => {
 xhr.send();
 ```
 
-
 ## API
 
 ### isBmp(buffer)
 
-Accepts a Buffer (Node.js) or Uint8Array.
+Accepts a `Buffer` (Node.js) or `Uint8Array`.
 
 It only needs the first 2 bytes.
-
 
 ## Related
 
 - [file-type](https://github.com/sindresorhus/file-type) - Detect the file type of a Buffer/Uint8Array
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
